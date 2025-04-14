@@ -18,7 +18,8 @@ export interface MarketItem {
   image: string;
   price: number;
   category: string;
-  subcategory: string;
+  subcategory?: string;
+  signature?: string;
 }
 
 export interface UserInfo {
