@@ -171,7 +171,7 @@ export default function Sidebar() {
     <aside className="w-72 pr-8 overflow-y-auto max-h-[calc(100vh-4rem)]">
       <Link 
         href="/"
-        className="flex items-center gap-2 text-purple-400 hover:text-purple-300 py-2 mb-4 text-lg font-medium"
+        className="flex items-center gap-2 text-purple-600 hover:text-purple-700 py-2 mb-4 text-lg font-medium"
       >
         <Home className="w-5 h-5" />
         <span>Home</span>
@@ -182,7 +182,7 @@ export default function Sidebar() {
           <div key={category.id} className="space-y-1">
             <button
               onClick={() => toggleCategory(category.id)}
-              className="w-full flex items-center justify-between text-purple-400 hover:text-purple-300 py-2"
+              className="w-full flex items-center justify-between text-purple-600 hover:text-purple-700 py-2"
             >
               <div className="flex items-center gap-2">
                 {expandedCategories.includes(category.id) ? (

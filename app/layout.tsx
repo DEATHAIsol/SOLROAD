@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${spaceGrotesk.variable} bg-gray-900 text-white min-h-screen`}>
+      <body className={`${inter.className} ${spaceGrotesk.variable} bg-white text-gray-900 min-h-screen`}>
         <Header />
         <main className="pt-16">
           {children}

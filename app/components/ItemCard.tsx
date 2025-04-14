@@ -7,7 +7,7 @@ interface ItemCardProps {
 
 export default function ItemCard({ item }: ItemCardProps) {
   return (
-    <div className="bg-gray-800 rounded-lg overflow-hidden">
+    <div className="bg-white rounded-lg overflow-hidden shadow-md border border-gray-200">
       <div className="aspect-square relative">
         <Image
           src={item.image}
@@ -19,7 +19,7 @@ export default function ItemCard({ item }: ItemCardProps) {
       
       <div className="p-4">
         <div className="flex items-center justify-between">
-          <span className="text-lg font-bold text-green-500">
+          <span className="text-lg font-bold text-green-600">
             {item.price} SOL
           </span>
         </div>
