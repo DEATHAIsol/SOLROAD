@@ -4,8 +4,8 @@ import Link from 'next/link'
 import { UserInfo } from '../types'
 
 const defaultUserInfo: UserInfo = {
-  messages: 1,
-  orders: 0,
+  messages: 10,
+  orders: 236,
   balance: 50,
   currency: 'SOL'
 }
@@ -36,12 +36,12 @@ export default function Header() {
             </nav>
             
             <div className="flex items-center space-x-4 text-purple-600">
-              <Link href="/tokenomics" className="hover:text-purple-700">
-                Tokenomics
+              <Link href="https://x.com/" className="hover:text-purple-700">
+                TWITTER
               </Link>
               <span className="text-gray-300">|</span>
-              <Link href="/roadmap" className="hover:text-purple-700">
-                Roadmap
+              <Link href="https://dexscreener.com/" className="hover:text-purple-700">
+                DEXSCREENER
               </Link>
             </div>
           </div>

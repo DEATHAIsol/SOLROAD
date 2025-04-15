@@ -20,6 +20,7 @@ export interface MarketItem {
   category: string;
   subcategory?: string;
   signature?: string;
+  description?: string;
 }
 
 export interface UserInfo {
