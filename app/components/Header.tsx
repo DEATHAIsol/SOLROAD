@@ -23,14 +23,26 @@ export default function Header() {
           </div>
           
           <div className="flex items-center space-x-8">
-            <nav className="flex items-center space-x-4 text-sm text-gray-600">
-              <Link href="/messages" className="hover:text-purple-600">
-                messages {defaultUserInfo.messages}
+            <nav className="flex items-center space-x-4 text-sm">
+              <Link 
+                href="/messages" 
+                className="flex items-center px-3 py-2 rounded-lg bg-gray-50 hover:bg-purple-50 text-gray-700 hover:text-purple-600 transition-all duration-200 border border-gray-200 hover:border-purple-200 group"
+              >
+                <span>messages</span>
+                <span className="ml-2 px-2 py-0.5 bg-purple-100 text-purple-600 rounded-md group-hover:bg-purple-200">
+                  {defaultUserInfo.messages}
+                </span>
               </Link>
-              <Link href="/orders" className="hover:text-purple-600">
-                orders {defaultUserInfo.orders}
+              <Link 
+                href="/orders" 
+                className="flex items-center px-3 py-2 rounded-lg bg-gray-50 hover:bg-purple-50 text-gray-700 hover:text-purple-600 transition-all duration-200 border border-gray-200 hover:border-purple-200 group"
+              >
+                <span>orders</span>
+                <span className="ml-2 px-2 py-0.5 bg-purple-100 text-purple-600 rounded-md group-hover:bg-purple-200">
+                  {defaultUserInfo.orders}
+                </span>
               </Link>
-              <span>
+              <span className="px-3 py-2 text-gray-600">
                 account {defaultUserInfo.balance} {defaultUserInfo.currency}
               </span>
             </nav>
